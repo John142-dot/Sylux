@@ -650,9 +650,9 @@ Section1:NewButton("Brick admin", "Universal", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Brick-Admin-BETA-12105"))()
 end)
 
-local ToggleSection = Tab1:NewSection("Toggles")
+local ToggleSection1 = Tab1:NewSection("Toggles")
 
-ToggleSection:NewToggle("Speed 200", "Click to toggle", function(state)
+ToggleSection1:NewToggle("Speed 200", "Click to toggle", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
     else
@@ -671,7 +671,7 @@ game:GetService("UserInputService").JumpRequest:Connect(function()
     end
 end)
 
-local SliderSection = Tab1:NewSection("Sliders")
+local SliderSection1 = Tab1:NewSection("Sliders")
 SliderSection:NewSlider("Speed", "Slide to adjust speed", 16, 200, function(value)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
@@ -679,7 +679,7 @@ end)
 local TextBoxSection = Tab1:NewSection("Textboxes")
 
 -- Executor textbox
-TextBoxSection:NewTextBox("Executor URL", "Enter loadstring URL", function(url)
+TextBoxSection1:NewTextBox("Executor URL", "Enter loadstring URL", function(url)
     -- Check if the URL starts with "http" or "https"
     if url:match("^https?://") then
         loadstring(game:HttpGet(url))()
@@ -737,7 +737,7 @@ Section3:NewButton("Meowham X", "Click to execute", function()
 end)
 
 local Tab4 = Window:NewTab("Bloxfruits & Games!")
-local Section = Tab4:NewSection("Scripts")
+local Section4 = Tab4:NewSection("Scripts")
 
 Section4:NewButton("built in for sea 1", "Click to execute", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/John-142dot/bloxfruitsgui/main/something.lua"))()
@@ -771,7 +771,7 @@ Section4:NewButton("Stingray autofarm bloxfruit", "Click to execute", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Blox-Fruits-Stingray-Keyless-Autofarm-11278"))()
 end)
 
-local Section = Tab4:NewSection("Universal Crosshairs!")
+local Section4 = Tab4:NewSection("Universal Crosshairs!")
 
 Section4:NewButton("Normal crosshair", "Click to execute", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/John142-dot/balldot/main/normaldot"))()
@@ -801,13 +801,13 @@ Section4:NewButton("Tbao hub keyless", "Click to execute", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
 end)
 
-local Section = Tab4:NewSection("Bladeball")
+local Section4 = Tab4:NewSection("Bladeball")
 
 Section4:NewButton("Visual Bladeball", "Click to execute", function()
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
 end)
 
-local Section = Tab4:NewSection("MM2🖕")
+local Section4 = Tab4:NewSection("MM2🖕")
 
 Section4:NewButton("mm2 panel", "Click to execute", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
@@ -823,7 +823,7 @@ Section4:NewButton("Ghost Hub", "op", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
 end)
 
-local Section = Tab4:NewSection("TSB🤾")
+local Section4 = Tab4:NewSection("TSB🤾")
 
 Section4:NewButton("jn hh script", "op", function()
     loadstring(game:HttpGet("https://freenote.biz/raw/xkcdkgyhkx",true))()
