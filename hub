@@ -28,11 +28,24 @@
 --//  /_/  \ _\
 
 -- Notification
+repeat wait() until game:IsLoaded()
+local function onKick(reason)
+    print("Kicking player for reason:", reason)
+end
+
+if not getgenv().ActivateTheUltimateTrolly then
+    onKick("Ultimate Trolly is not activated.")
+    game.Players.LocalPlayer:Kick("Ultimate Trolly is not activated.")
+else
+    print("Ultimate Trolly is activated!")
+end
+print("Game has loaded, executing script!")
+
 game:GetService("StarterGui"):SetCore("SendNotification",{
     Title = "Script loaded enjoy!",
     Text = "Do you like this hub?", 
     Button1 = "yea!",
-    Button2 = "stfu nigga",
+    Button2 = "stfu",
     Duration = 12
 })
 
